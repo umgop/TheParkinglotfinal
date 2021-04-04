@@ -139,12 +139,12 @@ def load_data():
 Carstatus = [0,0,0,0,0,0,0,0,0,0]
 CarInformation = ["","","","","","","","","",""]
 st.write("# Parking lot Simulator 2.0")
-st.write("What do you want to do? - Reserve(2), Free(3), Vacant spots Graph (Tells Which spots are free or taken)- Graph on reservation percentages made per a spot made(4), Calculate Revenue (5)")
+st.write("What do you want to do? - Reserve(2), Free(3) - Cost 10 dollars, Vacant spots Graph (Tells Which spots are free or taken)- Graph on reservation percentages per a spot(4), Calculate Revenue (5)")
 main_question = st.selectbox("Choose from the options",[1,2,3,4,5])
 
 revenue = 0
 if main_question == 2:
-    spotnumber = st.selectbox('Please select a number from 1-10', [1,2,3,4,5,6,7,8,9,10])
+    spotnumber = st.selectbox('Please select a number from 1-10 - Make sure to pay 10 dollars', [1,2,3,4,5,6,7,8,9,10])
     name = st.text_input("Name")
     information = st.text_input("Car Information:Ex(Color, Car, License plate number) - (Red, Toyota Siena, 6Trj56)")
     if st.button("Reserve"):
