@@ -144,7 +144,7 @@ main_question = st.selectbox("Choose from the options",[1,2,3,4,5])
 
 revenue = 0
 if main_question == 2:
-    spotnumber = st.selectbox('Please select a number from 1-10 - Make sure to pay 10 dollars', [1,2,3,4,5,6,7,8,9,10])
+    spotnumber = st.selectbox('Please select a number from 1-10', [1,2,3,4,5,6,7,8,9,10])
     name = st.text_input("Name")
     information = st.text_input("Car Information:Ex(Color, Car, License plate number) - (Red, Toyota Siena, 6Trj56)")
     if st.button("Reserve"):
@@ -158,7 +158,7 @@ if main_question == 2:
 
 if main_question == 3:
     st.write("Free Spots")
-    spotnumber = st.selectbox('Please select a number from 1-10', [1,2,3,4,5,6,7,8,9,10])
+    spotnumber = st.selectbox('Please select a number from 1-10 - Make sure to pay 10 dollars', [1,2,3,4,5,6,7,8,9,10])
     if st.button("Free"):
         free_reservation()
     df = load_data()
